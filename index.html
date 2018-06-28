@@ -1,0 +1,127 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>SH TRADING</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/Estilos.css">
+	<link rel="stylesheet" type="text/css" href="fonts/style.css">
+	<link rel="shortcut icon" type="image/x-icon" href="images/icon.png"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+<header>
+<div class="w3-content w3-section">
+  <img class="slider animate-left" src="images/portada_1.jpg">
+  <img class="slider animate-right" src="images/portada_2.jpg">
+  <img class="slider animate-left" src="images/portada_3.jpg">
+</div>
+<script type="text/javascript">
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("slider");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 5000);    
+}
+</script>
+</header>
+<nav>
+<ul>
+	<li><a class="select" href="index.html"><span class="icon-home3 icon_nav"></span> EMPRESA</a></li>
+	<li><a href="productos.html"><span class="icon-cart icon_nav"></span> PRODUCTOS</a></li>
+	<li><a href="publicidad.html"><span class="icon-price-tags icon_nav"></span> PUBLICIDAD</a></li>
+	<li><a href="contacto.html"><span class="icon-phone icon_nav"></span> CONTACTENOS</a></li>
+	<li><a href="trabaja.html"><span class="icon-hammer icon_nav"></span> TRABAJA CON NOSOTROS</a></li>
+</ul>
+</nav>
+<br><br><br>
+<div class="contenido">
+	<div class="panel"><br><h1 class="texto">NUESTRA EMPRESA</h1></div><br>
+	<button class="accordion"><h1 class="texto">Vision</h1></button>
+	<div class="panel_acord" background="images/fondo.jpg">
+	<br><br>
+	<hr sise="3"><br>
+	  <p class="texto blokes">Ser la mejor opción del mercado en venta de vehículos y servicios posteriores.<br><br><br><br><br><br><br><br><br></p>
+	  <img class="blokes" src="images/vision.png">
+	 <br>
+	<hr sise="3"><br>
+	</div>
+	<br><br>
+	<button class="accordion"><h1 class="texto">Mision</h1></button>
+	<div class="panel_acord" background="images/fondo.jpg">
+	<br><br>
+	<hr sise="3"><br>
+	  <p class="texto blokes">Ser la empresa líder en la comercialización de vehículos y prestación de servicios post ventas, brindando soluciones a la medida de nuestros clientes. Ser reconocida por la calidad humana y profesional de nuestra gente, tanto por clientes como por proveedores.<br><br><br><br><br><br></p>
+	  <img class="blokes" src="images/mision.png">
+	 <br>
+	<hr sise="3"><br>
+	</div>
+	<br><br>
+	<button class="accordion"><h1 class="texto">Valores</h1></button>
+	<div class="panel_acord" background="images/fondo.jpg">
+	<br><br>
+	<hr sise="3"><br>
+	<ul class="blokes">
+		<li class="texto"><b>Responsabilidad en nuestras labores:</b>
+		Todos los colaboradores estamos involucrados con nuestras actividades llevándolas con responsabilidad y dedicación para que el día a día hagamos un trabajo óptimo.
+		</li>
+		<li class="texto"><b>Eficiencia  en la utilización de los recursos:</b>
+		La utilización de nuestros recursos se realiza con la mayor eficiencia, en la cual nuestras inversiones puedan contribuir con los resultados de la empresa.
+		</li>
+		<li class="texto"><b>Eficacia del día a día:</b>
+		En Planta Lechera Tacna S.A. estamos comprometidos con nuestras metas del día a día a realizarlas con eficacia.
+		</li>
+		<li class="texto"><b>Trabajo en equipo:</b>
+		Nuestra mayor sinergia es el resultado de un trabajo en equipo liderado por la gerencia y nuestros colaboradores con el cual obtendremos lo mejor de nuestro grupo humano.
+		</li>
+		<li class="texto"><b>Reconocimiento personal:</b>
+		En Planta Lechera Tacna S.A. es muy importante el reconocer los logros de nuestro personal y desarrollarnos hacia un mayor desenvolvimiento laboral y personal.
+		</li>
+	</ul>
+	<img class="blokes" style="width: 30%; height: 30%" src="images/valores.png">
+	<br><br>
+	<hr sise="3"><br>
+	</div>
+
+
+	<script>
+	var acc = document.getElementsByClassName("accordion");
+	var i;
+
+	for (i = 0; i < acc.length; i++) {
+	    acc[i].addEventListener("click", function() {
+	        this.classList.toggle("active");
+	        var panel = this.nextElementSibling;
+	        if (panel.style.display === "block") {
+	            panel.style.display = "none";
+	        } else {
+	            panel.style.display = "block";
+	        }
+	    });
+	}
+	</script>
+	
+</div><br><br>
+<footer>
+<div id="footerBar" align="center">
+<ul>
+	<li><a href="index.html">EMPRESA</a></li>
+	<li><a href="productos.html">PRODUCTOS</a></li>
+	<li><a href="contacto.html">CONTACTENOS</a></li>
+	<li><a href="trabaja.html">TRABAJA CON NOSOTROS</a></li>
+</ul><br>
+<p>Jesus Escalante - Sleyder Esperilla - Yumin Gomez<br>
+IntroWeb 2018</p>
+</div>
+</footer>
+
+</body>
+</html>
